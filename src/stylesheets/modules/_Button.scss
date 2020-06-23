@@ -1,0 +1,27 @@
+.Button {
+  align-items: center;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #1089F5;
+  border-radius: 2px;
+  box-shadow: none;
+  color: #1089F5;
+  cursor: pointer;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  line-height: 1;
+  outline: 0;
+  padding: 0 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+
+  &:focus {
+    box-shadow: 0 0 3px #1089F5;
+  }
+
+  &:hover {
+    background: rgba(#1089F5,0.1);
+  }
+}
