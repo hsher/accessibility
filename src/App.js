@@ -37,6 +37,15 @@ function App() {
       <main className="Page-content">
         <div className="Section">
           <div className="Section-content">
+            <h1>Awesome page title</h1>
+
+            <p>
+              Start of great and short page description.<br/>
+              Second sentence with interesting information.<br/>
+              Third sentence.<br/>
+              Final part of great page description.
+            </p>
+
             <ul className="row">
               <li className="col-md-3 col-6">
                 <div className="CrewGroup">
