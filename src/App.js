@@ -1,5 +1,11 @@
 import React from 'react';
 import './App.scss';
+import avatar1 from './images/avatar1.jpg';
+import avatar2 from './images/avatar2.jpg';
+import avatar3 from './images/avatar3.jpg';
+import avatar4 from './images/avatar4.jpg';
+import avatar5 from './images/avatar5.jpg';
+import avatar6 from './images/avatar6.jpg';
 
 function App() {
   return (
@@ -29,6 +35,85 @@ function App() {
       </header>
 
       <main className="Page-content">
+        <div className="Section">
+          <div className="Section-content">
+            <ul className="row">
+              <li className="col-md-3 col-6">
+                <div className="CrewGroup">
+                  <div className="CrewGroup-image">
+                    <img className="Image" alt="Some persone" src={avatar1}/>
+                  </div>
+                  <p className="Typography Typography--heading3 Typography--white">Some persone</p>
+                  <p className="Typography Typography--body2 Typography--white u-opacity-6">Some position</p>
+                </div>
+              </li>
+              <li className="col-md-3 col-6">
+                <div className="CrewGroup">
+                  <div className="CrewGroup-image">
+                    <img className="Image" alt="Some persone" src={avatar2}/>
+                  </div>
+                  <p className="Typography Typography--heading3 Typography--white">Some persone</p>
+                  <p className="Typography Typography--body2 Typography--white u-opacity-6">Some position</p>
+                </div>
+              </li>
+              <li className="col-md-3 col-6">
+                <div className="CrewGroup">
+                  <div className="CrewGroup-image">
+                    <img className="Image" alt="Some persone" src={avatar5}/>
+                  </div>
+                  <p className="Typography Typography--heading3 Typography--white">Some persone</p>
+                  <p className="Typography Typography--body2 Typography--white u-opacity-6">Some position</p>
+                </div>
+              </li>
+              <li className="col-md-3 col-6">
+                <div className="CrewGroup">
+                  <div className="CrewGroup-image">
+                    <img className="Image" alt="Some persone" src={avatar4}/>
+                  </div>
+                  <p className="Typography Typography--heading3 Typography--white">Some persone</p>
+                  <p className="Typography Typography--body2 Typography--white u-opacity-6">Some position</p>
+                </div>
+              </li>
+
+              <li className="col-md-3 col-6">
+                <div className="CrewGroup">
+                  <div className="CrewGroup-image">
+                    <img className="Image" alt="Some persone" src={avatar3}/>
+                  </div>
+                  <p className="Typography Typography--heading3 Typography--white">Some persone</p>
+                  <p className="Typography Typography--body2 Typography--white u-opacity-6">Some position</p>
+                </div>
+              </li>
+              <li className="col-md-3 col-6">
+                <div className="CrewGroup">
+                  <div className="CrewGroup-image">
+                    <img className="Image" alt="Some persone" src={avatar6}/>
+                  </div>
+                  <p className="Typography Typography--heading3 Typography--white">Some persone</p>
+                  <p className="Typography Typography--body2 Typography--white u-opacity-6">Some position</p>
+                </div>
+              </li>
+              <li className="col-md-3 col-6">
+                <div className="CrewGroup">
+                  <div className="CrewGroup-image">
+                    <img className="Image" alt="Some persone" src={avatar2}/>
+                  </div>
+                  <p className="Typography Typography--heading3 Typography--white">Some persone</p>
+                  <p className="Typography Typography--body2 Typography--white u-opacity-6">Some position</p>
+                </div>
+              </li>
+              <li className="col-md-3 col-6">
+                <div className="CrewGroup">
+                  <div className="CrewGroup-image">
+                    <img className="Image" alt="Some persone" src={avatar1}/>
+                  </div>
+                  <p className="Typography Typography--heading3 Typography--white">Some persone</p>
+                  <p className="Typography Typography--body2 Typography--white u-opacity-6">Some position</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </main>
 
       <footer className="Section Section--zircon">
