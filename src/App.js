@@ -179,7 +179,25 @@ function App() {
 
               <div className="col-lg-3 d-none d-lg-block">
                 <aside className="Typography Typography--body0 u-pt-10">
-                  Some sidebar in {"<aside>"} tag
+                  <p className="u-pb-20">
+                    Some sidebar in {"<aside>"} tag
+                  </p>
+
+                  <span className="Typography Typography--body1">
+                    This is ordered list
+                  </span>
+
+                  <ol>
+                    <li>
+                      First item in ordered list
+                    </li>
+                    <li>
+                      Second item in ordered list
+                    </li>
+                    <li>
+                      Third item in ordered list
+                    </li>
+                  </ol>
                 </aside>
               </div>
             </div>
