@@ -37,140 +37,150 @@ function App() {
       <main className="Page-content">
         <div className="Section">
           <div className="Section-content">
-            <nav className="Breadcrumb" aria-label="Breadcrumb">
-              <ol className="Breadcrumb-list">
-                <li>
-                  <a href="/" className="Breadcrumb-link">
-                    Index
-                  </a>
-                  <span className="Breadcrumb-separator">
-                    >
-                  </span>
-                </li>
-                <li>
-                  <a href="/pg2" className="Breadcrumb-link">
-                    Second Page
-                  </a>
-                  <span className="Breadcrumb-separator">
-                    >
-                  </span>
-                </li>
-                <li>
-                  <a href="/pg2/this-pg" aria-current="page" className="Breadcrumb-link">
-                    This Page
-                  </a>
-                </li>
-              </ol>
-            </nav>
+            <div className="row">
+              <div className="col-9">
+                <nav className="Breadcrumb" aria-label="Breadcrumb">
+                  <ol className="Breadcrumb-list">
+                    <li>
+                      <a href="/" className="Breadcrumb-link">
+                        Index
+                      </a>
+                      <span className="Breadcrumb-separator">
+                        >
+                      </span>
+                    </li>
+                    <li>
+                      <a href="/pg2" className="Breadcrumb-link">
+                        Second Page
+                      </a>
+                      <span className="Breadcrumb-separator">
+                        >
+                      </span>
+                    </li>
+                    <li>
+                      <a href="/pg2/this-pg" aria-current="page" className="Breadcrumb-link">
+                        This Page
+                      </a>
+                    </li>
+                  </ol>
+                </nav>
 
-            <h1 className="Typography Typography--heading1 u-pb-20">Awesome page title</h1>
+                <h1 className="Typography Typography--heading1 u-pb-20">Awesome page title</h1>
 
-            <p className="Typography Typography--body2 u-pb-50">
-              Start of great and short page description.<br/>
-              Second sentence with interesting information.<br/>
-              Third sentence.<br/>
-              Final part of great page description.
-            </p>
-
-            <ul className="row u-pb-50">
-              <li className="col-md-3 col-6 u-pb-20">
-                <div className="CrewGroup">
-                  <div className="CrewGroup-image">
-                    <img className="Image" alt="Some persone" src={avatar1}/>
-                  </div>
-                  <p className="Typography Typography--heading3">Some persone</p>
-                  <p className="Typography Typography--body2 u-opacity-6">Some position</p>
-                </div>
-              </li>
-              <li className="col-md-3 col-6 u-pb-20">
-                <div className="CrewGroup">
-                  <div className="CrewGroup-image">
-                    <img className="Image" alt="Some persone" src={avatar2}/>
-                  </div>
-                  <p className="Typography Typography--heading3">Some persone</p>
-                  <p className="Typography Typography--body2 u-opacity-6">Some position</p>
-                </div>
-              </li>
-              <li className="col-md-3 col-6 u-pb-20">
-                <div className="CrewGroup">
-                  <div className="CrewGroup-image">
-                    <img className="Image" alt="Some persone" src={avatar5}/>
-                  </div>
-                  <p className="Typography Typography--heading3">Some persone</p>
-                  <p className="Typography Typography--body2 u-opacity-6">Some position</p>
-                </div>
-              </li>
-              <li className="col-md-3 col-6 u-pb-20">
-                <div className="CrewGroup">
-                  <div className="CrewGroup-image">
-                    <img className="Image" alt="Some persone" src={avatar4}/>
-                  </div>
-                  <p className="Typography Typography--heading3">Some persone</p>
-                  <p className="Typography Typography--body2 u-opacity-6">Some position</p>
-                </div>
-              </li>
-
-              <li className="col-md-3 col-6 u-pb-20">
-                <div className="CrewGroup">
-                  <div className="CrewGroup-image">
-                    <img className="Image" alt="Some persone" src={avatar3}/>
-                  </div>
-                  <p className="Typography Typography--heading3">Some persone</p>
-                  <p className="Typography Typography--body2 u-opacity-6">Some position</p>
-                </div>
-              </li>
-              <li className="col-md-3 col-6 u-pb-20">
-                <div className="CrewGroup">
-                  <div className="CrewGroup-image">
-                    <img className="Image" alt="Some persone" src={avatar6}/>
-                  </div>
-                  <p className="Typography Typography--heading3">Some persone</p>
-                  <p className="Typography Typography--body2 u-opacity-6">Some position</p>
-                </div>
-              </li>
-              <li className="col-md-3 col-6 u-pb-20">
-                <div className="CrewGroup">
-                  <div className="CrewGroup-image">
-                    <img className="Image" alt="Some persone" src={avatar2}/>
-                  </div>
-                  <p className="Typography Typography--heading3">Some persone</p>
-                  <p className="Typography Typography--body2 u-opacity-6">Some position</p>
-                </div>
-              </li>
-              <li className="col-md-3 col-6 u-pb-20">
-                <div className="CrewGroup">
-                  <div className="CrewGroup-image">
-                    <img className="Image" alt="Some persone" src={avatar1}/>
-                  </div>
-                  <p className="Typography Typography--heading3">Some persone</p>
-                  <p className="Typography Typography--body2 u-opacity-6">Some position</p>
-                </div>
-              </li>
-            </ul>
-
-            <h2 className="Typography Typography--heading2 u-pb-20">Second level page heading</h2>
-
-            <div className="row u-pb-50">
-              <div className="col-md-4">
-                <h3 className="Typography Typography--heading3 u-pb-20">Third level heading for first column</h3>
-                <p className="Typography Typography--body2">
-                  Some great information in first column.
-                  Information in this column also is very interesting.
+                <p className="Typography Typography--body2 u-pb-50">
+                  Start of great and short page description.<br/>
+                  Second sentence with interesting information.<br/>
+                  Third sentence.<br/>
+                  Final part of great page description.
                 </p>
+
+                <ul className="row u-pb-50">
+                  <li className="col-md-3 col-6 u-pb-20">
+                    <div className="CrewGroup">
+                      <div className="CrewGroup-image">
+                        <img className="Image" alt="Some persone" src={avatar1}/>
+                      </div>
+                      <p className="Typography Typography--heading3">Some persone</p>
+                      <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                    </div>
+                  </li>
+                  <li className="col-md-3 col-6 u-pb-20">
+                    <div className="CrewGroup">
+                      <div className="CrewGroup-image">
+                        <img className="Image" alt="Some persone" src={avatar2}/>
+                      </div>
+                      <p className="Typography Typography--heading3">Some persone</p>
+                      <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                    </div>
+                  </li>
+                  <li className="col-md-3 col-6 u-pb-20">
+                    <div className="CrewGroup">
+                      <div className="CrewGroup-image">
+                        <img className="Image" alt="Some persone" src={avatar5}/>
+                      </div>
+                      <p className="Typography Typography--heading3">Some persone</p>
+                      <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                    </div>
+                  </li>
+                  <li className="col-md-3 col-6 u-pb-20">
+                    <div className="CrewGroup">
+                      <div className="CrewGroup-image">
+                        <img className="Image" alt="Some persone" src={avatar4}/>
+                      </div>
+                      <p className="Typography Typography--heading3">Some persone</p>
+                      <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                    </div>
+                  </li>
+
+                  <li className="col-md-3 col-6 u-pb-20">
+                    <div className="CrewGroup">
+                      <div className="CrewGroup-image">
+                        <img className="Image" alt="Some persone" src={avatar3}/>
+                      </div>
+                      <p className="Typography Typography--heading3">Some persone</p>
+                      <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                    </div>
+                  </li>
+                  <li className="col-md-3 col-6 u-pb-20">
+                    <div className="CrewGroup">
+                      <div className="CrewGroup-image">
+                        <img className="Image" alt="Some persone" src={avatar6}/>
+                      </div>
+                      <p className="Typography Typography--heading3">Some persone</p>
+                      <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                    </div>
+                  </li>
+                  <li className="col-md-3 col-6 u-pb-20">
+                    <div className="CrewGroup">
+                      <div className="CrewGroup-image">
+                        <img className="Image" alt="Some persone" src={avatar2}/>
+                      </div>
+                      <p className="Typography Typography--heading3">Some persone</p>
+                      <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                    </div>
+                  </li>
+                  <li className="col-md-3 col-6 u-pb-20">
+                    <div className="CrewGroup">
+                      <div className="CrewGroup-image">
+                        <img className="Image" alt="Some persone" src={avatar1}/>
+                      </div>
+                      <p className="Typography Typography--heading3">Some persone</p>
+                      <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                    </div>
+                  </li>
+                </ul>
+
+                <h2 className="Typography Typography--heading2 u-pb-20">Second level page heading</h2>
+
+                <div className="row u-pb-50">
+                  <div className="col-md-4">
+                    <h3 className="Typography Typography--heading3 u-pb-20">Third level heading for first column</h3>
+                    <p className="Typography Typography--body2">
+                      Some great information in first column.
+                      Information in this column also is very interesting.
+                    </p>
+                  </div>
+
+                  <div className="col-md-4">
+                    <h3 className="Typography Typography--heading3 u-pb-20">Third level heading for second column</h3>
+                    <p className="Typography Typography--body2">
+                      Some great information in second column
+                    </p>
+                  </div>
+
+                  <div className="col-md-4">
+                    <h3 className="Typography Typography--heading3 u-pb-20">Third level heading for third column</h3>
+                    <p className="Typography Typography--body2">
+                      Some great information in third column
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              <div className="col-md-4">
-                <h3 className="Typography Typography--heading3 u-pb-20">Third level heading for second column</h3>
-                <p className="Typography Typography--body2">
-                  Some great information in second column
-                </p>
-              </div>
-
-              <div className="col-md-4">
-                <h3 className="Typography Typography--heading3 u-pb-20">Third level heading for third column</h3>
-                <p className="Typography Typography--body2">
-                  Some great information in third column
-                </p>
+              <div className="col-3">
+                <aside className="Typography Typography--body0 u-pt-10">
+                  Some sidebar in {"<aside>"} tag
+                </aside>
               </div>
             </div>
           </div>
