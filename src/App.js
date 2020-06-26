@@ -37,9 +37,9 @@ function App() {
       <main className="Page-content">
         <div className="Section">
           <div className="Section-content">
-            <h1>Awesome page title</h1>
+            <h1 className="Typography Typography--heading1">Awesome page title</h1>
 
-            <p>
+            <p className="Typography Typography--body2">
               Start of great and short page description.<br/>
               Second sentence with interesting information.<br/>
               Third sentence.<br/>
