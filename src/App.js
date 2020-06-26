@@ -38,7 +38,7 @@ function App() {
         <div className="Section">
           <div className="Section-content">
             <div className="row">
-              <div className="col-9">
+              <div className="col-lg-9">
                 <nav className="Breadcrumb" aria-label="Breadcrumb">
                   <ol className="Breadcrumb-list">
                     <li>
@@ -177,7 +177,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="col-3">
+              <div className="col-lg-3 d-none d-lg-block">
                 <aside className="Typography Typography--body0 u-pt-10">
                   Some sidebar in {"<aside>"} tag
                 </aside>
