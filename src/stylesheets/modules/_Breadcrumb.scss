@@ -1,0 +1,16 @@
+.Breadcrumb {
+  padding: 10px 0 50px;
+  &-list {
+    display: flex;
+  }
+
+  &-link {
+    font-size: 12px;
+    text-decoration: none;
+  }
+
+  &-separator {
+    font-size: 12px;
+    padding: 0 10px 0 5px;
+  }
+}
