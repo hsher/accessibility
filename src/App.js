@@ -36,10 +36,10 @@ function App() {
 
       <main className="Page-content">
         <div className="Section">
-          <div className="Section-content">
-            <h1 className="Typography Typography--heading1">Awesome page title</h1>
+          <div className="Section-content u-pt-50">
+            <h1 className="Typography Typography--heading1 u-pb-20">Awesome page title</h1>
 
-            <p className="Typography Typography--body2">
+            <p className="Typography Typography--body2 u-pb-50">
               Start of great and short page description.<br/>
               Second sentence with interesting information.<br/>
               Third sentence.<br/>
@@ -47,7 +47,7 @@ function App() {
             </p>
 
             <ul className="row">
-              <li className="col-md-3 col-6">
+              <li className="col-md-3 col-6 u-pb-20">
                 <div className="CrewGroup">
                   <div className="CrewGroup-image">
                     <img className="Image" alt="Some persone" src={avatar1}/>
@@ -56,7 +56,7 @@ function App() {
                   <p className="Typography Typography--body2 Typography--white u-opacity-6">Some position</p>
                 </div>
               </li>
-              <li className="col-md-3 col-6">
+              <li className="col-md-3 col-6 u-pb-20">
                 <div className="CrewGroup">
                   <div className="CrewGroup-image">
                     <img className="Image" alt="Some persone" src={avatar2}/>
@@ -65,7 +65,7 @@ function App() {
                   <p className="Typography Typography--body2 Typography--white u-opacity-6">Some position</p>
                 </div>
               </li>
-              <li className="col-md-3 col-6">
+              <li className="col-md-3 col-6 u-pb-20">
                 <div className="CrewGroup">
                   <div className="CrewGroup-image">
                     <img className="Image" alt="Some persone" src={avatar5}/>
@@ -74,7 +74,7 @@ function App() {
                   <p className="Typography Typography--body2 Typography--white u-opacity-6">Some position</p>
                 </div>
               </li>
-              <li className="col-md-3 col-6">
+              <li className="col-md-3 col-6 u-pb-20">
                 <div className="CrewGroup">
                   <div className="CrewGroup-image">
                     <img className="Image" alt="Some persone" src={avatar4}/>
@@ -84,7 +84,7 @@ function App() {
                 </div>
               </li>
 
-              <li className="col-md-3 col-6">
+              <li className="col-md-3 col-6 u-pb-20">
                 <div className="CrewGroup">
                   <div className="CrewGroup-image">
                     <img className="Image" alt="Some persone" src={avatar3}/>
@@ -93,7 +93,7 @@ function App() {
                   <p className="Typography Typography--body2 Typography--white u-opacity-6">Some position</p>
                 </div>
               </li>
-              <li className="col-md-3 col-6">
+              <li className="col-md-3 col-6 u-pb-20">
                 <div className="CrewGroup">
                   <div className="CrewGroup-image">
                     <img className="Image" alt="Some persone" src={avatar6}/>
@@ -102,7 +102,7 @@ function App() {
                   <p className="Typography Typography--body2 Typography--white u-opacity-6">Some position</p>
                 </div>
               </li>
-              <li className="col-md-3 col-6">
+              <li className="col-md-3 col-6 u-pb-20">
                 <div className="CrewGroup">
                   <div className="CrewGroup-image">
                     <img className="Image" alt="Some persone" src={avatar2}/>
@@ -111,7 +111,7 @@ function App() {
                   <p className="Typography Typography--body2 Typography--white u-opacity-6">Some position</p>
                 </div>
               </li>
-              <li className="col-md-3 col-6">
+              <li className="col-md-3 col-6 u-pb-20">
                 <div className="CrewGroup">
                   <div className="CrewGroup-image">
                     <img className="Image" alt="Some persone" src={avatar1}/>

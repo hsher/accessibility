@@ -1,5 +1,21 @@
-.u-p {
-  &-0 {
+.u {
+  &-p-0 {
     padding: 0;
+  }
+
+  &-pt {
+    &-50 {
+      padding-top: 50px;
+    }
+  }
+
+  &-pb {
+    &-20 {
+      padding-bottom: 20px;
+    }
+
+    &-50 {
+      padding-bottom: 50px;
+    }
   }
 }
