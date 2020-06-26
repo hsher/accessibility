@@ -46,7 +46,7 @@ function App() {
               Final part of great page description.
             </p>
 
-            <ul className="row">
+            <ul className="row u-pb-50">
               <li className="col-md-3 col-6 u-pb-20">
                 <div className="CrewGroup">
                   <div className="CrewGroup-image">
@@ -121,6 +121,32 @@ function App() {
                 </div>
               </li>
             </ul>
+
+            <h2 class="Typography Typography--heading2 u-pb-20">Second level page heading</h2>
+
+            <div class="row u-pb-50">
+              <div class="col-md-4">
+                <h3 class="Typography Typography--heading3 u-pb-20">Third level heading for first column</h3>
+                <p class="Typography Typography--body2">
+                  Some great information in first column.
+                  Information in this column also is very interesting.
+                </p>
+              </div>
+
+              <div class="col-md-4">
+                <h3 class="Typography Typography--heading3 u-pb-20">Third level heading for second column</h3>
+                <p class="Typography Typography--body2">
+                  Some great information in second column
+                </p>
+              </div>
+
+              <div class="col-md-4">
+                <h3 class="Typography Typography--heading3 u-pb-20">Third level heading for third column</h3>
+                <p class="Typography Typography--body2">
+                  Some great information in third column
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </main>
