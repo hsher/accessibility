@@ -1,7 +1,36 @@
 .SiteNavigation {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
+  @include media-breakpoint-down(md) {
+    padding: 10px 0;
+
+    &.isActive {
+      .SiteNavigation-list {
+        display: block;
+      }
+    }
+  }
+
+  &-button {
+    display: none;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+
+    @include media-breakpoint-down(md) {
+      display: block;
+    }
+  }
+
+  &-list {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+      padding: 20px 0 0;
+    }
+  }
 
   &-link {
     color: #363636;
