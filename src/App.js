@@ -6,6 +6,8 @@ import avatar3 from './images/avatar3.jpg';
 import avatar4 from './images/avatar4.jpg';
 import avatar5 from './images/avatar5.jpg';
 import avatar6 from './images/avatar6.jpg';
+import avatar7 from './images/avatar7.jpg';
+import avatar8 from './images/avatar8.jpg';
 
 function App() {
   return (
@@ -105,7 +107,7 @@ function App() {
                   <li className="col-md-3 col-6 u-pb-20">
                     <div className="CrewGroup">
                       <div className="CrewGroup-image">
-                        <img className="Image" alt="" src={avatar4}/>
+                        <img className="Image" alt="" src={avatar8}/>
                       </div>
                       <p className="Typography Typography--heading3">Some persone</p>
                       <p className="Typography Typography--body2 u-opacity-6">Some position</p>
@@ -133,7 +135,7 @@ function App() {
                   <li className="col-md-3 col-6 u-pb-20">
                     <div className="CrewGroup">
                       <div className="CrewGroup-image">
-                        <img className="Image" alt="" src={avatar2}/>
+                        <img className="Image" alt="" src={avatar7}/>
                       </div>
                       <p className="Typography Typography--heading3">Some persone</p>
                       <p className="Typography Typography--body2 u-opacity-6">Some position</p>
@@ -142,7 +144,7 @@ function App() {
                   <li className="col-md-3 col-6 u-pb-20">
                     <div className="CrewGroup">
                       <div className="CrewGroup-image">
-                        <img className="Image" alt="" src={avatar1}/>
+                        <img className="Image" alt="" src={avatar4}/>
                       </div>
                       <p className="Typography Typography--heading3">Some persone</p>
                       <p className="Typography Typography--body2 u-opacity-6">Some position</p>
