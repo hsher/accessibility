@@ -74,6 +74,45 @@ class Contacts extends React.Component {
                   </li>
                 </ol>
               </nav>
+
+              <h1 className="Typography Typography--heading1 u-pb-20">Contacts</h1>
+
+              <div className="row">
+                <div className="col-md-6">
+                  <form>
+                    <div>
+                      <label for="name">
+                        Name:
+                      </label>
+                      <input type="text" id="name" />
+                    </div>
+
+                    <div>
+                      <label for="email">
+                        Email:
+                      </label>
+                      <input type="email" id="email" />
+                    </div>
+
+                    <div>
+                      <label for="message">
+                        Message:
+                      </label>
+                      <textarea type="text" id="message" />
+                    </div>
+
+                    <button type="submit">
+                      Send
+                    </button>
+                  </form>
+                </div>
+
+                <div className="col-md-6">
+                  <p>
+                    Please fill the form to make it filled.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </main>
