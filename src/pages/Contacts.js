@@ -6,7 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 class Contacts extends React.Component {
   constructor(props) {
       super(props);
-      this.toggleClass= this.toggleClass.bind(this);
+      this.toggleclassName= this.toggleClass.bind(this);
       this.state = {
           active: false,
       };
@@ -16,6 +16,24 @@ class Contacts extends React.Component {
       const currentState = this.state.active;
       this.setState({ active: !currentState });
   };
+
+  toggleCheckbox(e) {
+    if (e.currentTarget.querySelector('.jsCeckboxSource').checked) {
+      e.currentTarget.querySelector('.jsCeckboxSource').checked = false
+    } else {
+      e.currentTarget.querySelector('.jsCeckboxSource').checked = true
+    }
+
+    let checkboxChecked = e.currentTarget.querySelector('.jsCeckboxSource').checked;
+
+    e.currentTarget.setAttribute('aria-checked', checkboxChecked);
+  }
+
+  toggleCheckboxKey(e) {
+    if (e.key === " ") {
+      e.currentTarget.click();
+    }
+  }
 
   render() {
     return (
@@ -99,6 +117,22 @@ class Contacts extends React.Component {
                         Message:
                       </label>
                       <textarea type="text" id="message" className="Form-field" rows="5" />
+                    </div>
+
+                    <div className="u-pb-10">
+                      <label
+                        className="Checkbox Checkbox--medium Checkbox--subscribe d-flex align-items-center u-pointer"
+                        tabIndex="0"
+                        role="checkbox"
+                        aria-checked="false"
+                        aria-labelledby="checkboxLabel"
+                        onClick={this.toggleCheckbox}
+                        onKeyPress={this.toggleCheckboxKey}
+                      >
+                        <input type="checkbox" className="jsCeckboxSource Checkbox-source" />
+                        <span className="Checkbox-result"></span>
+                        <span className="Checkbox-caption" id="checkboxLabel">Agree</span>
+                      </label>
                     </div>
 
                     <button type="submit" className="Button">
