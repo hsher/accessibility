@@ -47,8 +47,8 @@ class App extends React.Component {
                   </a>
                 </li>
                 <li className="SiteNavigation-item">
-                  <a href="/" className="SiteNavigation-link">
-                    Page2
+                  <a href="/contacts" className="SiteNavigation-link">
+                    Contacts
                   </a>
                 </li>
                 <li className="SiteNavigation-item">
