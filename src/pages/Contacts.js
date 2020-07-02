@@ -35,6 +35,18 @@ class Contacts extends React.Component {
     }
   }
 
+  toggleRadio(e) {
+    let radioChecked = e.currentTarget.querySelector('.jsRadioSource').checked;
+
+    e.currentTarget.setAttribute('aria-checked', radioChecked);
+  }
+
+  toggleRadioKey(e) {
+    if (e.key === " ") {
+      e.currentTarget.click();
+    }
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -136,6 +148,36 @@ class Contacts extends React.Component {
                         <input type="checkbox" className="jsCeckboxSource Checkbox-source" />
                         <span className="Checkbox-result"></span>
                         <span className="Checkbox-caption" id="checkboxLabel">Agree</span>
+                      </label>
+                    </div>
+
+                    <div className="d-flex u-pb-10">
+                      <label
+                        className="Radio Radio--medium u-pr-10"
+                        tabIndex="0"
+                        role="radio"
+                        aria-checked="false"
+                        aria-labelledby="radioLabel"
+                        onClick={this.toggleRadio}
+                        onKeyPress={this.toggleRadioKey}
+                      >
+                        <input type="Radio" name="radiogroup1" className="jsRadioSource Radio-source" />
+                        <span className="Radio-result"></span>
+                        <span className="Radio-caption" id="radioLabel">Radio1</span>
+                      </label>
+
+                      <label
+                        className="Radio Radio--medium"
+                        tabIndex="0"
+                        role="radio"
+                        aria-checked="false"
+                        aria-labelledby="radioLabel"
+                        onClick={this.toggleRadio}
+                        onKeyPress={this.toggleRadioKey}
+                      >
+                        <input type="Radio" name="radiogroup1" className="jsRadioSource Radio-source" />
+                        <span className="Radio-result"></span>
+                        <span className="Radio-caption" id="radioLabel">Radio2</span>
                       </label>
                     </div>
 
