@@ -36,7 +36,7 @@ class App extends React.Component {
               onClick={this.toggleClass}
             >
               <button className="SiteNavigation-button">
-                <span className="Button">
+                <span className="Button" aria-label="Menu">
                   <FontAwesomeIcon icon={faBars} />
                 </span>
               </button>
