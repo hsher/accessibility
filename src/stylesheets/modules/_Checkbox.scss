@@ -1,4 +1,8 @@
 .Checkbox {
+  align-items: center;
+  display: inline-flex;
+  cursor: pointer;
+
   &--medium {
     .Checkbox-source {
       &:checked {

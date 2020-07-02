@@ -123,9 +123,9 @@ class Contacts extends React.Component {
                       <textarea type="text" id="message" className="Form-field" rows="5" />
                     </div>
 
-                    <div className="u-pb-10">
+                    <div className="d-flex u-pb-10">
                       <label
-                        className="Checkbox Checkbox--medium Checkbox--subscribe d-flex align-items-center u-pointer"
+                        className="Checkbox Checkbox--medium"
                         tabIndex="0"
                         role="checkbox"
                         aria-checked="false"
