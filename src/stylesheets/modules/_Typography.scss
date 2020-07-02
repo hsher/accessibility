@@ -1,0 +1,78 @@
+.Typography {
+  &--heading1 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+
+  &--heading2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+
+  &--heading3 {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 30px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 26px;
+    }
+  }
+
+  &--body0 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+
+    @include media-breakpoint-down(md) {
+      line-height: 18px;
+    }
+  }
+
+  &--body1 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  &--body2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  &--body3 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 34px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+}
