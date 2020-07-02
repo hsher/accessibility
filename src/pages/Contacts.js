@@ -95,6 +95,10 @@ class Contacts extends React.Component {
 
               <h1 className="Typography Typography--heading1 u-pb-20">Contacts</h1>
 
+              <p className="u-pb-20">
+                Please fill the form to make it filled.
+              </p>
+
               <div className="row">
                 <div className="col-md-6">
                   <form className="Form">
@@ -139,12 +143,6 @@ class Contacts extends React.Component {
                       Send
                     </button>
                   </form>
-                </div>
-
-                <div className="col-md-6">
-                  <p>
-                    Please fill the form to make it filled.
-                  </p>
                 </div>
               </div>
             </div>
