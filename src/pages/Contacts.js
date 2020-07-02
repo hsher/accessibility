@@ -79,29 +79,29 @@ class Contacts extends React.Component {
 
               <div className="row">
                 <div className="col-md-6">
-                  <form>
-                    <div>
-                      <label htmlFor="name" className="u-weight-600">
+                  <form className="Form">
+                    <div className="u-pb-10">
+                      <label htmlFor="name" className="Form-label">
                         Name:
                       </label>
-                      <input type="text" id="name" />
+                      <input type="text" id="name" className="Form-field" />
                     </div>
 
-                    <div>
-                      <label htmlFor="email" className="u-weight-600">
+                    <div className="u-pb-10">
+                      <label htmlFor="email" className="Form-label">
                         Email:
                       </label>
-                      <input type="email" id="email" />
+                      <input type="email" id="email" className="Form-field" />
                     </div>
 
-                    <div>
-                      <label htmlFor="message" className="u-weight-600">
+                    <div className="u-pb-10">
+                      <label htmlFor="message" className="Form-label">
                         Message:
                       </label>
-                      <textarea type="text" id="message" />
+                      <textarea type="text" id="message" className="Form-field" rows="5" />
                     </div>
 
-                    <button type="submit">
+                    <button type="submit" className="Button">
                       Send
                     </button>
                   </form>
