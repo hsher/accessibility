@@ -6,7 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 class Contacts extends React.Component {
   constructor(props) {
       super(props);
-      this.toggleclassName= this.toggleClass.bind(this);
+      this.toggleClass= this.toggleClass.bind(this);
       this.state = {
           active: false,
       };
