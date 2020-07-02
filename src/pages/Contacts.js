@@ -57,6 +57,23 @@ class Contacts extends React.Component {
         <main className="Page-content">
           <div className="Section">
             <div className="Section-content">
+              <nav className="Breadcrumb" aria-label="Breadcrumb">
+                <ol className="Breadcrumb-list">
+                  <li>
+                    <a href="/" className="Breadcrumb-link">
+                      Main
+                    </a>
+                    <span className="Breadcrumb-separator">
+                      >
+                    </span>
+                  </li>
+                  <li>
+                    <a href="/contacts"  aria-current="page" className="Breadcrumb-link">
+                      Contacts
+                    </a>
+                  </li>
+                </ol>
+              </nav>
             </div>
           </div>
         </main>
