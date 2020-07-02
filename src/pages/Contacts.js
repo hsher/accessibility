@@ -81,21 +81,21 @@ class Contacts extends React.Component {
                 <div className="col-md-6">
                   <form>
                     <div>
-                      <label for="name">
+                      <label for="name" className="u-weight-600">
                         Name:
                       </label>
                       <input type="text" id="name" />
                     </div>
 
                     <div>
-                      <label for="email">
+                      <label for="email" className="u-weight-600">
                         Email:
                       </label>
                       <input type="email" id="email" />
                     </div>
 
                     <div>
-                      <label for="message">
+                      <label for="message" className="u-weight-600">
                         Message:
                       </label>
                       <textarea type="text" id="message" />
