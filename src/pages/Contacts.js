@@ -1,5 +1,7 @@
 import React from 'react';
-
+import RRS from 'react-responsive-select';
+import "react-responsive-select/dist/ReactResponsiveSelect.css";
+import { CaretIcon } from "../CaretIcon";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
@@ -46,6 +48,9 @@ class Contacts extends React.Component {
       e.currentTarget.click();
     }
   }
+
+  onChange = (newValue) => console.log('onChange', newValue);
+  onSubmit = () => console.log('onSubmit');
 
   render() {
     return (
@@ -135,7 +140,25 @@ class Contacts extends React.Component {
                       <textarea type="text" id="message" className="Form-field" rows="5" />
                     </div>
 
-                    <div className="d-flex u-pb-10">
+                    <div className="u-pb-10">
+                      <label htmlFor="message" className="Form-label">
+                        City:
+                      </label>
+                      <RRS
+                        name="make"
+                        options={[
+                          { text: 'City', value: 'city' },
+                          { text: 'Town', value: 'town', markup: <span>Town</span> },
+                          { text: 'Village', value: 'village', markup: <span>Village</span> }
+                        ]}
+                        selectedValue="oldsmobile"
+                        caretIcon={<CaretIcon key="someUniqueKey" />}
+                        onSubmit={this.onSubmit}
+                        onChange={this.onChange}
+                      />
+                    </div>
+
+                    <div className="d-flex u-pt-30 u-pb-10">
                       <label
                         className="Checkbox Checkbox--medium"
                         tabIndex="0"
@@ -151,7 +174,7 @@ class Contacts extends React.Component {
                       </label>
                     </div>
 
-                    <div className="d-flex u-pb-10">
+                    <div className="d-flex u-pb-20">
                       <label
                         className="Radio Radio--medium u-pr-10"
                         tabIndex="0"
