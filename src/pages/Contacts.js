@@ -4,6 +4,8 @@ import "react-responsive-select/dist/ReactResponsiveSelect.css";
 import { CaretIcon } from "../CaretIcon";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Dropdown } from 'react-bootstrap';
 
 class Contacts extends React.Component {
   constructor(props) {
@@ -156,6 +158,23 @@ class Contacts extends React.Component {
                         onSubmit={this.onSubmit}
                         onChange={this.onChange}
                       />
+                    </div>
+
+                    <div className="u-pb-10">
+                      <label htmlFor="message" className="Form-label">
+                        Some dropdown:
+                      </label>
+                      <Dropdown>
+                        <Dropdown.Toggle variant="success" id="dropdown-basic">
+                          Dropdown Button
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                        </Dropdown.Menu>
+                      </Dropdown>
                     </div>
 
                     <div className="d-flex u-pt-30 u-pb-10">
