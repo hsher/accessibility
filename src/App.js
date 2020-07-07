@@ -2,6 +2,7 @@ import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import Slider from './Slider';
 
 import avatar1 from './images/avatar1.jpg';
 import avatar2 from './images/avatar2.jpg';
@@ -11,6 +12,9 @@ import avatar5 from './images/avatar5.jpg';
 import avatar6 from './images/avatar6.jpg';
 import avatar7 from './images/avatar7.jpg';
 import avatar8 from './images/avatar8.jpg';
+
+const images = [avatar1, avatar2, avatar3, avatar4, avatar5];
+
 
 class App extends React.Component {
   constructor(props) {
@@ -178,6 +182,24 @@ class App extends React.Component {
                       </p>
                     </div>
                   </div>
+
+                  <h2 className="Typography Typography--heading2 u-pb-20">Slider example</h2>
+                  <Slider
+                    options={{
+                      autoPlay: 4000,
+                      pauseAutoPlayOnHover: true,
+                      wrapAround: true,
+                      fullscreen: true,
+                      adaptiveHeight: true,
+                    }}
+                  >
+                    {images.map((image, index) => (
+                      <div style={{ width: '100%', height: '183px', textAlign: 'center' }} key={index}>
+                        <img src={image} alt="" />
+                      </div>
+                    ))}
+                  </Slider>
+                  <div className="u-pb-50"></div>
                 </div>
 
                 <div className="col-lg-3 d-none d-lg-block">
