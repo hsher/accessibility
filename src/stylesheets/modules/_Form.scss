@@ -1,0 +1,13 @@
+.Form {
+  &-field {
+    display: block;
+    font-size: 16px;
+    position: relative;
+    width: 100%;
+  }
+
+  &-label {
+    display: flex;
+    padding: 0 0 5px;
+  }
+}
