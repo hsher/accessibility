@@ -186,19 +186,24 @@ class App extends React.Component {
                   <h2 className="Typography Typography--heading2 u-pb-20">Slider example</h2>
                   <Slider
                     options={{
-                      autoPlay: 4000,
-                      pauseAutoPlayOnHover: true,
+                      autoPlay: false,
+                      prevNextButtons: false,
                       wrapAround: true,
                       fullscreen: true,
                       adaptiveHeight: true,
+                      pageDots: false,
                     }}
                   >
                     {images.map((image, index) => (
                       <div style={{ width: '100%', height: '183px', textAlign: 'center' }} key={index}>
+                        <div className="ScreenReaderOnly">
+                          Slide {index + 1}
+                        </div>
                         <img src={image} alt="" />
                       </div>
                     ))}
                   </Slider>
+
                   <div className="u-pb-50"></div>
                 </div>
 

@@ -20,12 +20,22 @@ export default class Slider extends React.Component {
     this.setState({
       flickityReady: true,
     });
+
+    this.flickity.on('change', function(index) {
+      this.element.blur();
+      this.element.focus();
+    });
   }
 
   refreshFlickity() {
     this.flickity.reloadCells();
     this.flickity.resize();
     this.flickity.updateDraggable();
+  }
+
+  onClick() {
+    debugger
+    this.flickity.select(0);
   }
 
   componentWillUnmount() {
@@ -55,7 +65,24 @@ export default class Slider extends React.Component {
 
   render() {
     return [
-      <div className={'test'} key="flickityBase" ref={node => (this.flickityNode = node)} />,
+      <React.Fragment>
+        <div
+          className={'jsSlider test'}
+          key="flickityBase"
+          ref={node => (this.flickityNode = node)}
+          tabIndex="0"
+        />
+
+        <div>
+          <button onClick={this.onClick}>
+            prev
+          </button>
+
+          <button>
+            next
+          </button>
+        </div>
+      </React.Fragment>,
       this.renderPortal(),
     ].filter(Boolean);
   }
