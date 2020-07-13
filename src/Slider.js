@@ -12,6 +12,8 @@ export default class Slider extends React.Component {
     };
 
     this.refreshFlickity = this.refreshFlickity.bind(this);
+    this.slidePrev = this.slidePrev.bind(this);
+    this.slideNext = this.slideNext.bind(this);
   }
 
   componentDidMount() {
@@ -33,9 +35,12 @@ export default class Slider extends React.Component {
     this.flickity.updateDraggable();
   }
 
-  onClick() {
-    debugger
-    this.flickity.select(0);
+  slidePrev() {
+    this.flickity.previous()
+  }
+
+  slideNext() {
+    this.flickity.next()
   }
 
   componentWillUnmount() {
@@ -74,11 +79,19 @@ export default class Slider extends React.Component {
         />
 
         <div>
-          <button onClick={this.onClick}>
+          <button
+            className="test1"
+            ref={node => (this.flickityPrev = node)}
+            onClick={this.slidePrev}
+          >
+            {'<'}
             prev
           </button>
 
-          <button>
+          <button
+            onClick={this.slideNext}
+          >
+            {'>'}
             next
           </button>
         </div>
