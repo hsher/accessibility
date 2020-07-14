@@ -234,10 +234,10 @@ class App extends React.Component {
                 </div>
 
                 <div className="col-lg-3 d-none d-lg-block">
-                  <aside className="Typography Typography--body0 u-pt-10">
-                    <p className="u-pb-20">
+                  <aside className="u-sticky u-pt-10">
+                    <h1 className="Typography Typography--heading3 u-pb-20">
                       Some sidebar in {"<aside>"} tag
-                    </p>
+                    </h1>
 
                     <span className="Typography Typography--body1">
                       This is ordered list

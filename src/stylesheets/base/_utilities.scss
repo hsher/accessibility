@@ -42,4 +42,9 @@
       font-weight: 600;
     }
   }
+
+  &-sticky {
+    position: sticky;
+    top: 0;
+  }
 }
