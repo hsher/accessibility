@@ -1,6 +1,12 @@
 .Slider {
   position: relative;
 
+  &--base {
+    .Slider-actions {
+      display: none;
+    }
+  }
+
   &-actions {
     position: absolute;
     top: 50%;

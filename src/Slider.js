@@ -72,7 +72,7 @@ export default class Slider extends React.Component {
 
   render() {
     return [
-      <div className="Slider">
+      <div className={"Slider " + (this.props.className ? this.props.className : '')}>
         <div
           key="flickityBase"
           ref={node => (this.flickityNode = node)}
