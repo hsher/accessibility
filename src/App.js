@@ -67,168 +67,170 @@ class App extends React.Component {
           </div>
         </header>
 
-        <main className="Page-content">
+        <div className="Page-content">
           <div className="Section">
             <div className="Section-content">
               <div className="row">
                 <div className="col-lg-9">
-                  <h1 className="Typography Typography--heading1 u-pb-20 u-pt-50">Awesome page title</h1>
+                  <main>
+                    <h1 className="Typography Typography--heading1 u-pb-20 u-pt-50">Awesome page title</h1>
 
-                  <p className="Typography Typography--body2 u-pb-50">
-                    Start of great and short page description.<br/>
-                    Second sentence with interesting information.<br/>
-                    Third sentence.<br/>
-                    Final part of great page description.
-                  </p>
+                    <p className="Typography Typography--body2 u-pb-50">
+                      Start of great and short page description.<br/>
+                      Second sentence with interesting information.<br/>
+                      Third sentence.<br/>
+                      Final part of great page description.
+                    </p>
 
-                  <ul className="row u-pb-50">
-                    <li className="col-md-3 col-6 u-pb-20">
-                      <div className="CrewGroup">
-                        <div className="CrewGroup-image">
-                          <img className="Image" alt="" src={avatar1}/>
+                    <ul className="row u-pb-50">
+                      <li className="col-md-3 col-6 u-pb-20">
+                        <div className="CrewGroup">
+                          <div className="CrewGroup-image">
+                            <img className="Image" alt="" src={avatar1}/>
+                          </div>
+                          <p className="Typography Typography--heading3">Some persone</p>
+                          <p className="Typography Typography--body2 u-opacity-6">Some position</p>
                         </div>
-                        <p className="Typography Typography--heading3">Some persone</p>
-                        <p className="Typography Typography--body2 u-opacity-6">Some position</p>
-                      </div>
-                    </li>
-                    <li className="col-md-3 col-6 u-pb-20">
-                      <div className="CrewGroup">
-                        <div className="CrewGroup-image">
-                          <img className="Image" alt="" src={avatar2}/>
+                      </li>
+                      <li className="col-md-3 col-6 u-pb-20">
+                        <div className="CrewGroup">
+                          <div className="CrewGroup-image">
+                            <img className="Image" alt="" src={avatar2}/>
+                          </div>
+                          <p className="Typography Typography--heading3">Some persone</p>
+                          <p className="Typography Typography--body2 u-opacity-6">Some position</p>
                         </div>
-                        <p className="Typography Typography--heading3">Some persone</p>
-                        <p className="Typography Typography--body2 u-opacity-6">Some position</p>
-                      </div>
-                    </li>
-                    <li className="col-md-3 col-6 u-pb-20">
-                      <div className="CrewGroup">
-                        <div className="CrewGroup-image">
-                          <img className="Image" alt="" src={avatar5}/>
+                      </li>
+                      <li className="col-md-3 col-6 u-pb-20">
+                        <div className="CrewGroup">
+                          <div className="CrewGroup-image">
+                            <img className="Image" alt="" src={avatar5}/>
+                          </div>
+                          <p className="Typography Typography--heading3">Some persone</p>
+                          <p className="Typography Typography--body2 u-opacity-6">Some position</p>
                         </div>
-                        <p className="Typography Typography--heading3">Some persone</p>
-                        <p className="Typography Typography--body2 u-opacity-6">Some position</p>
-                      </div>
-                    </li>
-                    <li className="col-md-3 col-6 u-pb-20">
-                      <div className="CrewGroup">
-                        <div className="CrewGroup-image">
-                          <img className="Image" alt="" src={avatar8}/>
+                      </li>
+                      <li className="col-md-3 col-6 u-pb-20">
+                        <div className="CrewGroup">
+                          <div className="CrewGroup-image">
+                            <img className="Image" alt="" src={avatar8}/>
+                          </div>
+                          <p className="Typography Typography--heading3">Some persone</p>
+                          <p className="Typography Typography--body2 u-opacity-6">Some position</p>
                         </div>
-                        <p className="Typography Typography--heading3">Some persone</p>
-                        <p className="Typography Typography--body2 u-opacity-6">Some position</p>
-                      </div>
-                    </li>
+                      </li>
 
-                    <li className="col-md-3 col-6 u-pb-20">
-                      <div className="CrewGroup">
-                        <div className="CrewGroup-image">
-                          <img className="Image" alt="" src={avatar3}/>
+                      <li className="col-md-3 col-6 u-pb-20">
+                        <div className="CrewGroup">
+                          <div className="CrewGroup-image">
+                            <img className="Image" alt="" src={avatar3}/>
+                          </div>
+                          <p className="Typography Typography--heading3">Some persone</p>
+                          <p className="Typography Typography--body2 u-opacity-6">Some position</p>
                         </div>
-                        <p className="Typography Typography--heading3">Some persone</p>
-                        <p className="Typography Typography--body2 u-opacity-6">Some position</p>
-                      </div>
-                    </li>
-                    <li className="col-md-3 col-6 u-pb-20">
-                      <div className="CrewGroup">
-                        <div className="CrewGroup-image">
-                          <img className="Image" alt="" src={avatar6}/>
+                      </li>
+                      <li className="col-md-3 col-6 u-pb-20">
+                        <div className="CrewGroup">
+                          <div className="CrewGroup-image">
+                            <img className="Image" alt="" src={avatar6}/>
+                          </div>
+                          <p className="Typography Typography--heading3">Some persone</p>
+                          <p className="Typography Typography--body2 u-opacity-6">Some position</p>
                         </div>
-                        <p className="Typography Typography--heading3">Some persone</p>
-                        <p className="Typography Typography--body2 u-opacity-6">Some position</p>
-                      </div>
-                    </li>
-                    <li className="col-md-3 col-6 u-pb-20">
-                      <div className="CrewGroup">
-                        <div className="CrewGroup-image">
-                          <img className="Image" alt="" src={avatar7}/>
+                      </li>
+                      <li className="col-md-3 col-6 u-pb-20">
+                        <div className="CrewGroup">
+                          <div className="CrewGroup-image">
+                            <img className="Image" alt="" src={avatar7}/>
+                          </div>
+                          <p className="Typography Typography--heading3">Some persone</p>
+                          <p className="Typography Typography--body2 u-opacity-6">Some position</p>
                         </div>
-                        <p className="Typography Typography--heading3">Some persone</p>
-                        <p className="Typography Typography--body2 u-opacity-6">Some position</p>
-                      </div>
-                    </li>
-                    <li className="col-md-3 col-6 u-pb-20">
-                      <div className="CrewGroup">
-                        <div className="CrewGroup-image">
-                          <img className="Image" alt="" src={avatar4}/>
+                      </li>
+                      <li className="col-md-3 col-6 u-pb-20">
+                        <div className="CrewGroup">
+                          <div className="CrewGroup-image">
+                            <img className="Image" alt="" src={avatar4}/>
+                          </div>
+                          <p className="Typography Typography--heading3">Some persone</p>
+                          <p className="Typography Typography--body2 u-opacity-6">Some position</p>
                         </div>
-                        <p className="Typography Typography--heading3">Some persone</p>
-                        <p className="Typography Typography--body2 u-opacity-6">Some position</p>
-                      </div>
-                    </li>
-                  </ul>
+                      </li>
+                    </ul>
 
-                  <h2 className="Typography Typography--heading2 u-pb-20">Second level page heading</h2>
+                    <h2 className="Typography Typography--heading2 u-pb-20">Second level page heading</h2>
 
-                  <div className="row u-pb-50">
-                    <div className="col-md-4">
-                      <h3 className="Typography Typography--heading3 u-pb-20">Third level heading for first column</h3>
-                      <p className="Typography Typography--body2">
-                        Some great information in first column.
-                        Information in this column also is very interesting.
-                      </p>
+                    <div className="row u-pb-50">
+                      <div className="col-md-4">
+                        <h3 className="Typography Typography--heading3 u-pb-20">Third level heading for first column</h3>
+                        <p className="Typography Typography--body2">
+                          Some great information in first column.
+                          Information in this column also is very interesting.
+                        </p>
+                      </div>
+
+                      <div className="col-md-4">
+                        <h3 className="Typography Typography--heading3 u-pb-20">Third level heading for second column</h3>
+                        <p className="Typography Typography--body2">
+                          Some great information in second column
+                        </p>
+                      </div>
+
+                      <div className="col-md-4">
+                        <h3 className="Typography Typography--heading3 u-pb-20">Third level heading for third column</h3>
+                        <p className="Typography Typography--body2">
+                          Some great information in third column
+                        </p>
+                      </div>
                     </div>
 
-                    <div className="col-md-4">
-                      <h3 className="Typography Typography--heading3 u-pb-20">Third level heading for second column</h3>
-                      <p className="Typography Typography--body2">
-                        Some great information in second column
-                      </p>
-                    </div>
-
-                    <div className="col-md-4">
-                      <h3 className="Typography Typography--heading3 u-pb-20">Third level heading for third column</h3>
-                      <p className="Typography Typography--body2">
-                        Some great information in third column
-                      </p>
-                    </div>
-                  </div>
-
-                  <h2 className="Typography Typography--heading2 u-pb-20">Default slider</h2>
-                  <Slider
-                    className="Slider--base"
-                    options={{
-                      autoPlay: false,
-                      prevNextButtons: true,
-                      wrapAround: true,
-                      fullscreen: true,
-                      adaptiveHeight: true,
-                      pageDots: true,
-                    }}
-                  >
-                    {images.map((image, index) => (
-                      <div style={{ width: '100%', height: '183px', textAlign: 'center' }} key={index}>
-                        <div className="ScreenReaderOnly">
-                          Slide {index + 1}
+                    <h2 className="Typography Typography--heading2 u-pb-20">Default slider</h2>
+                    <Slider
+                      className="Slider--base"
+                      options={{
+                        autoPlay: false,
+                        prevNextButtons: true,
+                        wrapAround: true,
+                        fullscreen: true,
+                        adaptiveHeight: true,
+                        pageDots: true,
+                      }}
+                    >
+                      {images.map((image, index) => (
+                        <div style={{ width: '100%', height: '183px', textAlign: 'center' }} key={index}>
+                          <div className="ScreenReaderOnly">
+                            Slide {index + 1}
+                          </div>
+                          <img src={image} alt="" />
                         </div>
-                        <img src={image} alt="" />
-                      </div>
-                    ))}
-                  </Slider>
-                  <div className="u-pb-50"></div>
+                      ))}
+                    </Slider>
+                    <div className="u-pb-50"></div>
 
-                  <h2 className="Typography Typography--heading2 u-pb-20">Slider with some accessibility features</h2>
-                  <Slider
-                    options={{
-                      autoPlay: false,
-                      prevNextButtons: false,
-                      wrapAround: true,
-                      fullscreen: true,
-                      adaptiveHeight: true,
-                      pageDots: false,
-                    }}
-                    images={images}
-                  >
-                    {images.map((image, index) => (
-                      <div style={{ width: '100%', height: '183px', textAlign: 'center' }} key={index}>
-                        <div className="ScreenReaderOnly">
-                          Slide {index + 1}
+                    <h2 className="Typography Typography--heading2 u-pb-20">Slider with some accessibility features</h2>
+                    <Slider
+                      options={{
+                        autoPlay: false,
+                        prevNextButtons: false,
+                        wrapAround: true,
+                        fullscreen: true,
+                        adaptiveHeight: true,
+                        pageDots: false,
+                      }}
+                      images={images}
+                    >
+                      {images.map((image, index) => (
+                        <div style={{ width: '100%', height: '183px', textAlign: 'center' }} key={index}>
+                          <div className="ScreenReaderOnly">
+                            Slide {index + 1}
+                          </div>
+                          <img src={image} alt="" />
                         </div>
-                        <img src={image} alt="" />
-                      </div>
-                    ))}
-                  </Slider>
+                      ))}
+                    </Slider>
 
-                  <div className="u-pb-50"></div>
+                    <div className="u-pb-50"></div>
+                  </main>
                 </div>
 
                 <div className="col-lg-3 d-none d-lg-block">
@@ -257,7 +259,7 @@ class App extends React.Component {
               </div>
             </div>
           </div>
-        </main>
+        </div>
 
         <footer className="Section Section--zircon">
           <div className="Section-content">
