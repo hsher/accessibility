@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Flickity from 'flickity';
 import 'flickity/dist/flickity.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 export default class Slider extends React.Component {
   constructor(props) {
@@ -70,32 +72,35 @@ export default class Slider extends React.Component {
 
   render() {
     return [
-      <React.Fragment>
+      <div className="Slider">
         <div
-          className={'jsSlider test'}
           key="flickityBase"
           ref={node => (this.flickityNode = node)}
           tabIndex="0"
         />
 
-        <div>
-          <button
-            className="test1"
-            ref={node => (this.flickityPrev = node)}
-            onClick={this.slidePrev}
-          >
-            {'<'}
-            prev
-          </button>
+        <div className="Slider-actions">
+          <div className="Slider-action Slider-action--prev">
+            <button
+              className="Button"
+              onClick={this.slidePrev}
+            >
+              <FontAwesomeIcon icon={faChevronLeft} />
+              <span className="ScreenReaderOnly">Previos</span>
+            </button>
+          </div>
 
-          <button
-            onClick={this.slideNext}
-          >
-            {'>'}
-            next
-          </button>
+          <div className="Slider-action Slider-action--next">
+            <button
+              className="Button"
+              onClick={this.slideNext}
+            >
+              <span className="ScreenReaderOnly">Next</span>
+              <FontAwesomeIcon icon={faChevronRight} />
+            </button>
+          </div>
         </div>
-      </React.Fragment>,
+      </div>,
       this.renderPortal(),
     ].filter(Boolean);
   }

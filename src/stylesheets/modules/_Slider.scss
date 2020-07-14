@@ -1,0 +1,22 @@
+.Slider {
+  position: relative;
+
+  &-actions {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+
+  &-action {
+    position: absolute;
+    transform: translate(0, -50%);
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+}
