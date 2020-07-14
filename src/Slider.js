@@ -16,6 +16,7 @@ export default class Slider extends React.Component {
     this.refreshFlickity = this.refreshFlickity.bind(this);
     this.slidePrev = this.slidePrev.bind(this);
     this.slideNext = this.slideNext.bind(this);
+    this.slideTo = this.slideTo.bind(this);
   }
 
   componentDidMount() {
@@ -28,6 +29,11 @@ export default class Slider extends React.Component {
     this.flickity.on('change', function(index) {
       this.element.blur();
       this.element.focus();
+
+      if (this.element.nextElementSibling.nextElementSibling) {
+        this.element.nextElementSibling.nextElementSibling.querySelector('.isActive').classList.remove('isActive');
+        this.element.nextElementSibling.nextElementSibling.querySelector('[data-slide="' + index + '"]').classList.add('isActive');
+      }
     });
   }
 
@@ -38,11 +44,19 @@ export default class Slider extends React.Component {
   }
 
   slidePrev() {
-    this.flickity.previous()
+    this.flickity.previous();
   }
 
   slideNext() {
-    this.flickity.next()
+    this.flickity.next();
+  }
+
+  slideTo(e) {
+    const nextSlide = e.target.attributes['data-slide'].value;
+
+    this.flickity.select(nextSlide);
+    e.target.parentElement.parentElement.querySelector('.isActive').classList.remove('isActive');
+    e.target.parentElement.parentElement.querySelector('[data-slide="' + nextSlide + '"]').classList.add('isActive');
   }
 
   componentWillUnmount() {
@@ -100,6 +114,20 @@ export default class Slider extends React.Component {
             </button>
           </div>
         </div>
+
+        {this.props.images && <ol className="Slider-navigation">
+          {this.props.images && this.props.images.map((image, index) => (
+            <li className="Slider-navigationItem">
+              <button
+                className={"Slider-navigationAction" + (index === 0 ? ' isActive' : '')}
+                onClick={this.slideTo}
+                data-slide={index}
+              >
+                <span className="ScreenReaderOnly">Slide {index + 1}</span>
+              </button>
+            </li>
+          ))}
+        </ol>}
       </div>,
       this.renderPortal(),
     ].filter(Boolean);

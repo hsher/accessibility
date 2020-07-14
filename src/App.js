@@ -204,7 +204,7 @@ class App extends React.Component {
                       </div>
                     ))}
                   </Slider>
-                  <div class="u-pb-50"></div>
+                  <div className="u-pb-50"></div>
 
                   <h2 className="Typography Typography--heading2 u-pb-20">Slider with some accessibility features</h2>
                   <Slider
@@ -216,6 +216,7 @@ class App extends React.Component {
                       adaptiveHeight: true,
                       pageDots: false,
                     }}
+                    images={images}
                   >
                     {images.map((image, index) => (
                       <div style={{ width: '100%', height: '183px', textAlign: 'center' }} key={index}>
