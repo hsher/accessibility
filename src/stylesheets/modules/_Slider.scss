@@ -1,0 +1,50 @@
+.Slider {
+  position: relative;
+
+  &--base {
+    .Slider-actions {
+      display: none;
+    }
+  }
+
+  &-actions {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+
+  &-action {
+    position: absolute;
+    transform: translate(0, -50%);
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+
+  &-navigation {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  &-navigationAction {
+    background: #333;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    margin: 0 8px;
+    opacity: .25;
+    width: 10px;
+
+    &.isActive {
+      opacity: 1;
+    }
+  }
+}
