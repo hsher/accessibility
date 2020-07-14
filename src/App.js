@@ -204,8 +204,9 @@ class App extends React.Component {
                       </div>
                     ))}
                   </Slider>
+                  <div class="u-pb-50"></div>
 
-                  <h2 className="Typography Typography--heading2 u-pb-20">Slider example with some accessibility features</h2>
+                  <h2 className="Typography Typography--heading2 u-pb-20">Slider with some accessibility features</h2>
                   <Slider
                     options={{
                       autoPlay: false,
