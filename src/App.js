@@ -136,7 +136,7 @@ class App extends React.Component {
                           <div className="CrewGroup-image">
                             <img className="Image" alt="" src={avatar1}/>
                           </div>
-                          <p className="Typography Typography--heading3">Some persone</p>
+                          <p className="Typography Typography--heading3">Some person</p>
                           <p className="Typography Typography--body2 u-opacity-6">Some position</p>
                         </div>
                       </li>
@@ -145,7 +145,7 @@ class App extends React.Component {
                           <div className="CrewGroup-image">
                             <img className="Image" alt="" src={avatar2}/>
                           </div>
-                          <p className="Typography Typography--heading3">Some persone</p>
+                          <p className="Typography Typography--heading3">Some person</p>
                           <p className="Typography Typography--body2 u-opacity-6">Some position</p>
                         </div>
                       </li>
@@ -154,7 +154,7 @@ class App extends React.Component {
                           <div className="CrewGroup-image">
                             <img className="Image" alt="" src={avatar5}/>
                           </div>
-                          <p className="Typography Typography--heading3">Some persone</p>
+                          <p className="Typography Typography--heading3">Some person</p>
                           <p className="Typography Typography--body2 u-opacity-6">Some position</p>
                         </div>
                       </li>
@@ -163,7 +163,7 @@ class App extends React.Component {
                           <div className="CrewGroup-image">
                             <img className="Image" alt="" src={avatar8}/>
                           </div>
-                          <p className="Typography Typography--heading3">Some persone</p>
+                          <p className="Typography Typography--heading3">Some person</p>
                           <p className="Typography Typography--body2 u-opacity-6">Some position</p>
                         </div>
                       </li>
@@ -173,7 +173,7 @@ class App extends React.Component {
                           <div className="CrewGroup-image">
                             <img className="Image" alt="" src={avatar3}/>
                           </div>
-                          <p className="Typography Typography--heading3">Some persone</p>
+                          <p className="Typography Typography--heading3">Some person</p>
                           <p className="Typography Typography--body2 u-opacity-6">Some position</p>
                         </div>
                       </li>
@@ -182,7 +182,7 @@ class App extends React.Component {
                           <div className="CrewGroup-image">
                             <img className="Image" alt="" src={avatar6}/>
                           </div>
-                          <p className="Typography Typography--heading3">Some persone</p>
+                          <p className="Typography Typography--heading3">Some person</p>
                           <p className="Typography Typography--body2 u-opacity-6">Some position</p>
                         </div>
                       </li>
@@ -191,7 +191,7 @@ class App extends React.Component {
                           <div className="CrewGroup-image">
                             <img className="Image" alt="" src={avatar7}/>
                           </div>
-                          <p className="Typography Typography--heading3">Some persone</p>
+                          <p className="Typography Typography--heading3">Some person</p>
                           <p className="Typography Typography--body2 u-opacity-6">Some position</p>
                         </div>
                       </li>
@@ -200,7 +200,7 @@ class App extends React.Component {
                           <div className="CrewGroup-image">
                             <img className="Image" alt="" src={avatar4}/>
                           </div>
-                          <p className="Typography Typography--heading3">Some persone</p>
+                          <p className="Typography Typography--heading3">Some person</p>
                           <p className="Typography Typography--body2 u-opacity-6">Some position</p>
                         </div>
                       </li>
