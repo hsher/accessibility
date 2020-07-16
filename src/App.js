@@ -134,74 +134,90 @@ class App extends React.Component {
                       <li className="col-md-3 col-6 u-pb-20">
                         <div className="CrewGroup">
                           <div className="CrewGroup-image">
-                            <img className="Image" alt="" src={avatar1}/>
+                            <img className="Image" alt="" src={avatar1} aria-labelledby="avatar1"/>
                           </div>
-                          <p className="Typography Typography--heading3">Some person</p>
-                          <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                          <div id="avatar1">
+                            <p className="Typography Typography--heading3">Some person</p>
+                            <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                          </div>
                         </div>
                       </li>
                       <li className="col-md-3 col-6 u-pb-20">
                         <div className="CrewGroup">
                           <div className="CrewGroup-image">
-                            <img className="Image" alt="" src={avatar2}/>
+                            <img className="Image" alt="" src={avatar2} aria-labelledby="avatar2"/>
                           </div>
-                          <p className="Typography Typography--heading3">Some person</p>
-                          <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                          <div id="avatar2">
+                            <p className="Typography Typography--heading3">Some person</p>
+                            <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                          </div>
                         </div>
                       </li>
                       <li className="col-md-3 col-6 u-pb-20">
                         <div className="CrewGroup">
                           <div className="CrewGroup-image">
-                            <img className="Image" alt="" src={avatar5}/>
+                            <img className="Image" alt="" src={avatar5} aria-labelledby="avatar5"/>
                           </div>
-                          <p className="Typography Typography--heading3">Some person</p>
-                          <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                          <div id="avatar5">
+                            <p className="Typography Typography--heading3">Some person</p>
+                            <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                          </div>
                         </div>
                       </li>
                       <li className="col-md-3 col-6 u-pb-20">
                         <div className="CrewGroup">
                           <div className="CrewGroup-image">
-                            <img className="Image" alt="" src={avatar8}/>
+                            <img className="Image" alt="" src={avatar8} aria-labelledby="avatar8"/>
                           </div>
-                          <p className="Typography Typography--heading3">Some person</p>
-                          <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                          <div id="avatar8">
+                            <p className="Typography Typography--heading3">Some person</p>
+                            <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                          </div>
                         </div>
                       </li>
 
                       <li className="col-md-3 col-6 u-pb-20">
                         <div className="CrewGroup">
                           <div className="CrewGroup-image">
-                            <img className="Image" alt="" src={avatar3}/>
+                            <img className="Image" alt="" src={avatar3} aria-labelledby="avatar3"/>
                           </div>
-                          <p className="Typography Typography--heading3">Some person</p>
-                          <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                          <div id="avatar3">
+                            <p className="Typography Typography--heading3">Some person</p>
+                            <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                          </div>
                         </div>
                       </li>
                       <li className="col-md-3 col-6 u-pb-20">
                         <div className="CrewGroup">
                           <div className="CrewGroup-image">
-                            <img className="Image" alt="" src={avatar6}/>
+                            <img className="Image" alt="" src={avatar6} aria-labelledby="avatar6"/>
                           </div>
-                          <p className="Typography Typography--heading3">Some person</p>
-                          <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                          <div id="avatar6">
+                            <p className="Typography Typography--heading3">Some person</p>
+                            <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                          </div>
                         </div>
                       </li>
                       <li className="col-md-3 col-6 u-pb-20">
                         <div className="CrewGroup">
                           <div className="CrewGroup-image">
-                            <img className="Image" alt="" src={avatar7}/>
+                            <img className="Image" alt="" src={avatar7} aria-labelledby="avatar7"/>
                           </div>
-                          <p className="Typography Typography--heading3">Some person</p>
-                          <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                          <div id="avatar7">
+                            <p className="Typography Typography--heading3">Some person</p>
+                            <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                          </div>
                         </div>
                       </li>
                       <li className="col-md-3 col-6 u-pb-20">
                         <div className="CrewGroup">
                           <div className="CrewGroup-image">
-                            <img className="Image" alt="" src={avatar4}/>
+                            <img className="Image" alt="" src={avatar4} aria-labelledby="avatar4"/>
                           </div>
-                          <p className="Typography Typography--heading3">Some person</p>
-                          <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                          <div id="avatar4">
+                            <p className="Typography Typography--heading3">Some person</p>
+                            <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                          </div>
                         </div>
                       </li>
                     </ul>
