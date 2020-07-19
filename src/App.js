@@ -130,6 +130,12 @@ class App extends React.Component {
                       Пример можно увидить на странице <a href="/contacts">Contacts</a><br/>
                     </p>
 
+                    <h2 className="Typography Typography--heading2 u-pb-20">Пример скписка сотрудников</h2>
+
+                    <p className="Typography Typography--body2 u-pb-30">
+                      Пример списка изображений с подписями. Часто подобную конструкцию можно встретить в списке сотрудников компании, так же похожая конструкция характерна для товаров интернет-магазина. Со стороны верстки - это самый обычный {"<ul>"} список. Затруднения могут возникнуть с альтернативным текстом для изображения. В данном случае, поскольку под самим изображением идет описание "сотрудника" (его имя и должность) - то в разметке страницы вместо {"alt"} текста картинки использовалась ссылка на описание ({"aria-labelledby"}). В таком случае, когда скрин ридер сфокусируется на элементе списка - он просто "прочитает" имя и должность.
+                    </p>
+
                     <ul className="row u-pb-50">
                       <li className="col-md-3 col-6 u-pb-20">
                         <div className="CrewGroup">
@@ -137,8 +143,8 @@ class App extends React.Component {
                             <img className="Image" alt="" src={avatar1} aria-labelledby="avatar1"/>
                           </div>
                           <div id="avatar1">
-                            <p className="Typography Typography--heading3">Some person</p>
-                            <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                            <p className="Typography Typography--heading3">Мистер аватар</p>
+                            <p className="Typography Typography--body2 u-opacity-6">Первый в списке</p>
                           </div>
                         </div>
                       </li>
@@ -148,8 +154,8 @@ class App extends React.Component {
                             <img className="Image" alt="" src={avatar2} aria-labelledby="avatar2"/>
                           </div>
                           <div id="avatar2">
-                            <p className="Typography Typography--heading3">Some person</p>
-                            <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                            <p className="Typography Typography--heading3">Аанг</p>
+                            <p className="Typography Typography--body2 u-opacity-6">Аватар</p>
                           </div>
                         </div>
                       </li>
@@ -159,8 +165,8 @@ class App extends React.Component {
                             <img className="Image" alt="" src={avatar5} aria-labelledby="avatar5"/>
                           </div>
                           <div id="avatar5">
-                            <p className="Typography Typography--heading3">Some person</p>
-                            <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                            <p className="Typography Typography--heading3">Джейк Салли</p>
+                            <p className="Typography Typography--body2 u-opacity-6">Аватар Томми Салли</p>
                           </div>
                         </div>
                       </li>
@@ -170,8 +176,8 @@ class App extends React.Component {
                             <img className="Image" alt="" src={avatar8} aria-labelledby="avatar8"/>
                           </div>
                           <div id="avatar8">
-                            <p className="Typography Typography--heading3">Some person</p>
-                            <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                            <p className="Typography Typography--heading3">Корра</p>
+                            <p className="Typography Typography--body2 u-opacity-6">Аватар</p>
                           </div>
                         </div>
                       </li>
@@ -182,8 +188,8 @@ class App extends React.Component {
                             <img className="Image" alt="" src={avatar3} aria-labelledby="avatar3"/>
                           </div>
                           <div id="avatar3">
-                            <p className="Typography Typography--heading3">Some person</p>
-                            <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                            <p className="Typography Typography--heading3">Аанг</p>
+                            <p className="Typography Typography--body2 u-opacity-6">Аватар</p>
                           </div>
                         </div>
                       </li>
@@ -193,8 +199,8 @@ class App extends React.Component {
                             <img className="Image" alt="" src={avatar6} aria-labelledby="avatar6"/>
                           </div>
                           <div id="avatar6">
-                            <p className="Typography Typography--heading3">Some person</p>
-                            <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                            <p className="Typography Typography--heading3">Нейтири</p>
+                            <p className="Typography Typography--body2 u-opacity-6">Представитель на’ви</p>
                           </div>
                         </div>
                       </li>
@@ -204,8 +210,8 @@ class App extends React.Component {
                             <img className="Image" alt="" src={avatar7} aria-labelledby="avatar7"/>
                           </div>
                           <div id="avatar7">
-                            <p className="Typography Typography--heading3">Some person</p>
-                            <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                            <p className="Typography Typography--heading3">Корра</p>
+                            <p className="Typography Typography--body2 u-opacity-6">Аватар</p>
                           </div>
                         </div>
                       </li>
@@ -215,8 +221,8 @@ class App extends React.Component {
                             <img className="Image" alt="" src={avatar4} aria-labelledby="avatar4"/>
                           </div>
                           <div id="avatar4">
-                            <p className="Typography Typography--heading3">Some person</p>
-                            <p className="Typography Typography--body2 u-opacity-6">Some position</p>
+                            <p className="Typography Typography--heading3">Аанг</p>
+                            <p className="Typography Typography--body2 u-opacity-6">Аватар</p>
                           </div>
                         </div>
                       </li>
