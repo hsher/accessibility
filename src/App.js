@@ -228,6 +228,37 @@ class App extends React.Component {
                       </li>
                     </ul>
 
+                    <p className="Typography Typography--body2 u-pb-30">
+                      Html Структура списка сотрудников:
+                      <pre>{
+`<ul className="row u-pb-50">
+  <li className="col-md-3 col-6 u-pb-20">
+    <div className="CrewGroup">
+      <div className="CrewGroup-image">
+        <img className="Image" alt="" src={avatar1} aria-labelledby="avatar1"/>
+      </div>
+      <div id="avatar1">
+        <p className="Typography Typography--heading3">Мистер аватар</p>
+        <p className="Typography Typography--body2 u-opacity-6">Первый в списке</p>
+      </div>
+    </div>
+  </li>
+  <li className="col-md-3 col-6 u-pb-20">
+    <div className="CrewGroup">
+      <div className="CrewGroup-image">
+        <img className="Image" alt="" src={avatar2} aria-labelledby="avatar2"/>
+      </div>
+      <div id="avatar2">
+        <p className="Typography Typography--heading3">Аанг</p>
+        <p className="Typography Typography--body2 u-opacity-6">Аватар</p>
+      </div>
+    </div>
+  </li>
+  ...
+</ul>`
+                      }</pre>
+                    </p>
+
                     <h2 className="Typography Typography--heading2 u-pb-20">Заголовок второго уровня</h2>
 
                     <div className="row u-pb-50">
@@ -268,6 +299,39 @@ class App extends React.Component {
                       Из практических примеров с изменением порядка блоков на ум приходит блок покупки товара.<br/>
                       Тот блок, в котором находится изображение товара, его название, цена и кнопка "купить".<br/>
                       Очень часто десктопный вариант этого блока сильно "корежит" на мобильной версии.
+                    </p>
+
+                    <p className="Typography Typography--body2 u-pb-20">
+                      Три колонки размечены при помощи самого обычного бутстраповского грида.<br/>
+                      Пример:
+                      <pre>{
+`<div className="row u-pb-50">
+  <div className="col-md-4">
+    <h3 className="Typography Typography--heading3 u-pb-20">Тестовый заголовок третьего уровня</h3>
+    <p className="Typography Typography--body2">
+      текст
+    </p>
+  </div>
+
+  <div className="col-md-4">
+    <h3 className="Typography Typography--heading3 u-pb-20">Второй абзац</h3>
+    <p className="Typography Typography--body2">
+      текст
+    </p>
+  </div>
+
+  <div className="col-md-4">
+    <h3 className="Typography Typography--heading3 u-pb-20">Слишком очевидный пример</h3>
+    <p className="Typography Typography--body2">
+      текст
+    </p>
+  </div>
+</div>`
+                      }</pre>
+                      <br/>
+                      <br/>
+                      Более подробно про грид можно посмотреть в <a href="https://getbootstrap.com/docs/4.0/layout/grid/">документации по бутстрапу</a><br/>
+                      Остальные классы - это кастомные стили по <a href="https://github.com/gilbox/css-bliss">блисс методологии</a>
                     </p>
 
                     <h2 className="Typography Typography--heading2 u-pb-20">Слайдер "из коробки"</h2>
