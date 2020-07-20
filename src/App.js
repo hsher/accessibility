@@ -309,6 +309,27 @@ class App extends React.Component {
                       Ну, а сами точечки оформили в виде списка, чтобы опять же облегчить доступ к ним при помощи скрин ридера (у скрин ридеров есть возможность переключаться между заголовками, списками, элементами списка - поэтому для них так важна "структурность" разметки).
                     </p>
 
+                    <p className="Typography Typography--body2 u-pb-20">
+                      Для лучшей навигации при помощи скрин-ридера по странице можно оставлять "невидимые" пояснительные тексты.<br/>
+                      Для обычного пользователя они будут скрыты, но при навигации с клавиатуры эти элементы будут попадать в фокус и, соответственно, скрин-ридеры будут озвучивать их контент.<br/>
+                      Стили для такой скрытой подсказки:
+
+                      <pre>{
+`.ScreenReaderOnly {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}`
+                      }</pre>
+
+                      А в качестве примера можно обратить внимание на слайды: в каждом слайде есть такая скрытая подсказка.
+                    </p>
+
                     <Slider
                       options={{
                         autoPlay: false,
@@ -329,6 +350,54 @@ class App extends React.Component {
                         </div>
                       ))}
                     </Slider>
+
+                    <h3 className="Typography Typography--heading3 u-pt-20 u-pb-10">Html структура "доработанных" элементов слайдера</h3>
+                    <p className="Typography Typography--body2">
+                      Стрелки следующий/предыдущий слайд:
+                      <pre>{
+`<div class="Slider-actions">
+  <div class="Slider-action Slider-action--prev">
+    <button class="Button">
+      <svg></svg>
+
+      <span class="ScreenReaderOnly">
+        Previos
+      </span>
+    </button>
+  </div>
+
+  <div class="Slider-action Slider-action--next">
+    <button class="Button">
+      <span class="ScreenReaderOnly">
+        Next
+      </span>
+
+      <svg></svg>
+    </button>
+  </div>
+</div>`
+                      }</pre>
+
+                      <br/>
+                      <br/>
+                      Список с точечками слайда:
+                      <pre>{
+`<ol class="Slider-navigation">
+  <li class="Slider-navigationItem">
+    <button class="Slider-navigationAction isActive" data-slide="0">
+      <span class="ScreenReaderOnly">Slide 1</span>
+    </button>
+  </li>
+
+  <li class="Slider-navigationItem">
+    <button class="Slider-navigationAction" data-slide="1">
+      <span class="ScreenReaderOnly">Slide 2</span>
+    </button>
+  </li>
+  ...
+</ol>`
+                      }</pre>
+                    </p>
 
                     <div className="u-pb-50"></div>
 

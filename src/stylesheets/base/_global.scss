@@ -18,3 +18,13 @@ body {
   font-family: Arial;
 }
 
+pre {
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+  font-size: 13px;
+  max-height: 600px;
+  overflow: auto;
+  padding: 12px 8px;
+  width: auto;
+}
