@@ -505,10 +505,8 @@ class App extends React.Component {
         </div>
 
         <footer className="Section Section--zircon">
-          <div className="Section-content">
-            <br/>
+          <div className="Section-content u-pt-20 u-pb-20">
             Awesome footer
-            <br/><br/>
           </div>
         </footer>
       </React.Fragment>
