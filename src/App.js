@@ -141,93 +141,93 @@ class App extends React.Component {
 
                       <ul className="row u-pb-50">
                         <li className="col-md-3 col-6 u-pb-20">
-                          <div className="CrewGroup">
+                          <figure className="CrewGroup">
                             <div className="CrewGroup-image">
                               <img className="Image" alt="" src={avatar1} aria-labelledby="avatar1"/>
                             </div>
-                            <div id="avatar1">
+                            <figcaption id="avatar1">
                               <p className="Typography Typography--heading3">Мистер аватар</p>
                               <p className="Typography Typography--body2 u-opacity-6">Первый в списке</p>
-                            </div>
-                          </div>
+                            </figcaption>
+                          </figure>
                         </li>
                         <li className="col-md-3 col-6 u-pb-20">
-                          <div className="CrewGroup">
+                          <figure className="CrewGroup">
                             <div className="CrewGroup-image">
                               <img className="Image" alt="" src={avatar2} aria-labelledby="avatar2"/>
                             </div>
-                            <div id="avatar2">
+                            <figcaption id="avatar2">
                               <p className="Typography Typography--heading3">Аанг</p>
                               <p className="Typography Typography--body2 u-opacity-6">Аватар</p>
-                            </div>
-                          </div>
+                            </figcaption>
+                          </figure>
                         </li>
                         <li className="col-md-3 col-6 u-pb-20">
-                          <div className="CrewGroup">
+                          <figure className="CrewGroup">
                             <div className="CrewGroup-image">
                               <img className="Image" alt="" src={avatar5} aria-labelledby="avatar5"/>
                             </div>
-                            <div id="avatar5">
+                            <figcaption id="avatar5">
                               <p className="Typography Typography--heading3">Джейк Салли</p>
                               <p className="Typography Typography--body2 u-opacity-6">Аватар Томми Салли</p>
-                            </div>
-                          </div>
+                            </figcaption>
+                          </figure>
                         </li>
                         <li className="col-md-3 col-6 u-pb-20">
-                          <div className="CrewGroup">
+                          <figure className="CrewGroup">
                             <div className="CrewGroup-image">
                               <img className="Image" alt="" src={avatar8} aria-labelledby="avatar8"/>
                             </div>
-                            <div id="avatar8">
+                            <figcaption id="avatar8">
                               <p className="Typography Typography--heading3">Корра</p>
                               <p className="Typography Typography--body2 u-opacity-6">Аватар</p>
-                            </div>
-                          </div>
+                            </figcaption>
+                          </figure>
                         </li>
 
                         <li className="col-md-3 col-6 u-pb-20">
-                          <div className="CrewGroup">
+                          <figure className="CrewGroup">
                             <div className="CrewGroup-image">
                               <img className="Image" alt="" src={avatar3} aria-labelledby="avatar3"/>
                             </div>
-                            <div id="avatar3">
+                            <figcaption id="avatar3">
                               <p className="Typography Typography--heading3">Аанг</p>
                               <p className="Typography Typography--body2 u-opacity-6">Аватар</p>
-                            </div>
-                          </div>
+                            </figcaption>
+                          </figure>
                         </li>
                         <li className="col-md-3 col-6 u-pb-20">
-                          <div className="CrewGroup">
+                          <figure className="CrewGroup">
                             <div className="CrewGroup-image">
                               <img className="Image" alt="" src={avatar6} aria-labelledby="avatar6"/>
                             </div>
-                            <div id="avatar6">
+                            <figcaption id="avatar6">
                               <p className="Typography Typography--heading3">Нейтири</p>
                               <p className="Typography Typography--body2 u-opacity-6">Представитель на’ви</p>
-                            </div>
-                          </div>
+                            </figcaption>
+                          </figure>
                         </li>
                         <li className="col-md-3 col-6 u-pb-20">
-                          <div className="CrewGroup">
+                          <figure className="CrewGroup">
                             <div className="CrewGroup-image">
                               <img className="Image" alt="" src={avatar7} aria-labelledby="avatar7"/>
                             </div>
-                            <div id="avatar7">
+                            <figcaption id="avatar7">
                               <p className="Typography Typography--heading3">Корра</p>
                               <p className="Typography Typography--body2 u-opacity-6">Аватар</p>
-                            </div>
-                          </div>
+                            </figcaption>
+                          </figure>
                         </li>
                         <li className="col-md-3 col-6 u-pb-20">
-                          <div className="CrewGroup">
+                          <figure className="CrewGroup">
                             <div className="CrewGroup-image">
                               <img className="Image" alt="" src={avatar4} aria-labelledby="avatar4"/>
                             </div>
-                            <div id="avatar4">
+                            <figcaption id="avatar4">
                               <p className="Typography Typography--heading3">Аанг</p>
                               <p className="Typography Typography--body2 u-opacity-6">Аватар</p>
-                            </div>
-                          </div>
+                            </figcaption>
+                          </figure>
                         </li>
                       </ul>
 
@@ -236,26 +236,26 @@ class App extends React.Component {
                         <pre>{
   `<ul className="row u-pb-50">
     <li className="col-md-3 col-6 u-pb-20">
-      <div className="CrewGroup">
+      <figure className="CrewGroup">
         <div className="CrewGroup-image">
           <img className="Image" alt="" src={avatar1} aria-labelledby="avatar1"/>
         </div>
-        <div id="avatar1">
+        <figcaption id="avatar1">
           <p className="Typography Typography--heading3">Мистер аватар</p>
           <p className="Typography Typography--body2 u-opacity-6">Первый в списке</p>
-        </div>
-      </div>
+        </figcaption>
+      </figure>
     </li>
     <li className="col-md-3 col-6 u-pb-20">
-      <div className="CrewGroup">
+      <figure className="CrewGroup">
         <div className="CrewGroup-image">
           <img className="Image" alt="" src={avatar2} aria-labelledby="avatar2"/>
         </div>
-        <div id="avatar2">
+        <figcaption id="avatar2">
           <p className="Typography Typography--heading3">Аанг</p>
           <p className="Typography Typography--body2 u-opacity-6">Аватар</p>
-        </div>
-      </div>
+        </figcaption>
+      </figure>
     </li>
     ...
   </ul>`
