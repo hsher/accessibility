@@ -230,9 +230,132 @@ class Contacts extends React.Component {
                 </div>
 
                 <div className="col-md-6">
-                  Самая обычная форма, с самыми обычными лэйблами и инпутами. Единственное на что имеет смысл обратить внимание - реализация кастомного чекбокса и радиобатона. Потому что дропдаун и селект - взяты из сторонних библиотек без изменений.
-                  Если дизайн кастомных чекбоксов и радиобатонов может быть реализован на чистом цсс - то, к сожалению, ассесибилити требует накручивания js. Пусть он будет испольозваться только для переключения состояния, но все же уже не чистый цсс.
+                  <p className="Typography Typography--body2 u-pb-20">
+                    Самая обычная форма, с самыми обычными лэйблами и инпутами. Единственное на что имеет смысл обратить внимание - реализация кастомного чекбокса и радиобатона. Потому что дропдаун и селект - взяты из сторонних библиотек без изменений.
+                  </p>
+
+                  <p className="Typography Typography--body2 u-pb-20">
+                    Обычно дизайн кастомных чекбоксов и радиобатонов может быть реализован на чистом цсс.<br/>
+                    К сожалению, кастомные чекбоксы и радиобаттоны с поддержкой ассесибилити требуют js для изменения состояния.
+                    Примеры:
+                  </p>
+
+                  <h2 className="Typography Typography--heading3 u-pb-20">Чекбокс</h2>
+
+                  <h3 className="Typography Typography--body2 u-weight-600">
+                    html
+                  </h3>
+                  <pre>{
+`<label
+  className="Checkbox Checkbox--medium"
+  tabIndex="0"
+  role="checkbox"
+  aria-checked="false"
+  aria-labelledby="checkboxLabel"
+  onClick={this.toggleCheckbox}
+  onKeyPress={this.toggleCheckboxKey}
+>
+  <input type="checkbox" className="jsCeckboxSource Checkbox-source" />
+  <span className="Checkbox-result"></span>
+  <span className="Checkbox-caption" id="checkboxLabel">Agree</span>
+</label>`
+                  }</pre>
+
+                  <h3 className="Typography Typography--body2 u-weight-600 u-pt-20">
+                    css
+                  </h3>
+
+                  <pre>{
+`.Checkbox {
+  align-items: center;
+  display: inline-flex;
+  cursor: pointer;
+
+  &--medium {
+    .Checkbox-source {
+      &:checked {
+        + .Checkbox-result {
+          &::after {
+            left: calc(100% + 1px);
+          }
+        }
+      }
+    }
+
+    .Checkbox-result {
+      border-width: 2px;
+      height: 24px;
+      width: 36px;
+
+      &::after {
+        border-width: 2px;
+        height: 22px;
+        left: -1px;
+        top: -1px;
+        width: 22px;
+      }
+    }
+  }
+
+  &-source {
+    display: none;
+
+    &:checked {
+      + .Checkbox-result {
+        background-color: #1089F5;
+        border-color: #1089F5;
+
+        &::after {
+          background-color: #FFFFFF;
+          border-color: #1089F5;
+          left: calc(100% + 4px);
+          transform: translate(-100%, 0);
+        }
+      }
+    }
+  }
+
+  &-result {
+    background-color: #FFFFFF;
+    border: 4px solid #363636;
+    border-radius: 18px;
+    display: inline-block;
+    height: 36px;
+    position: relative;
+    width: 54px;
+
+    &::after {
+      background-color: #FFFFFF;
+      border: 4px solid #363636;
+      border-radius: 50%;
+      content: '';
+      height: 36px;
+      left: -4px;
+      position: absolute;
+      top: -4px;
+      transition: all 0.3s;
+      width: 36px;
+      z-index: 1;
+    }
+  }
+
+  &-caption {
+    padding: 0 0 0 5px;
+    transition: all 0.3s;
+  }
+}`
+                  }</pre>
+
+                  <h3 className="Typography Typography--body2 u-weight-600 u-pt-20">
+                    js
+                  </h3>
+
+                <p className="Typography Typography--body2 u-pb-20">
+                  На onChange меняем aria-checked. <br/>
+                  С радиобатонами идея точно такая же.
+                </p>
                 </div>
+
               </div>
             </div>
           </div>
