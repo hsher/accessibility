@@ -236,7 +236,8 @@ class Contacts extends React.Component {
 
                   <p className="Typography Typography--body2 u-pb-20">
                     Обычно дизайн кастомных чекбоксов и радиобатонов может быть реализован на чистом цсс.<br/>
-                    Но с поддержкой ассесибилити требуется js для изменения состояния.
+                    Но поддержка accessibility требует js для изменения атрибута{" "}
+                    <code class="u-noWrap">aria-checked</code><br/>
                     Примеры:
                   </p>
 

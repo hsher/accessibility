@@ -55,4 +55,8 @@
     position: sticky;
     top: 0;
   }
+
+  &-noWrap {
+    white-space: nowrap;
+  }
 }
