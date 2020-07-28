@@ -352,7 +352,7 @@ class Contacts extends React.Component {
                   </h3>
 
                 <p className="Typography Typography--body2 u-pb-20">
-                  На onChange меняем aria-checked. <br/>
+                  На <code class="u-noWrap">onChange</code>меняем <code class="u-noWrap">aria-checked</code>.<br/>
                   С радиобатонами идея точно такая же.
                 </p>
                 </div>
