@@ -7,6 +7,8 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Dropdown } from 'react-bootstrap';
 
+let myVar;
+
 class Contacts extends React.Component {
   constructor(props) {
       super(props);
@@ -53,6 +55,24 @@ class Contacts extends React.Component {
 
   onChange = (newValue) => console.log('onChange', newValue);
   onSubmit = () => console.log('onSubmit');
+
+  handleFocus = (e, byMouse) => {
+    let target = e.target;
+
+    target.classList.remove('isFocused');
+    byMouse = byMouse || false;
+
+
+    if (!byMouse) {
+      myVar = setTimeout(function(){ target.classList.add('isFocused'); }, 150);
+    }
+  }
+
+  handleClick = (e) => {
+    clearTimeout(myVar);
+    this.handleFocus(e, true);
+  }
+
 
   render() {
     return (
@@ -125,21 +145,21 @@ class Contacts extends React.Component {
                       <label htmlFor="name" className="Form-label">
                         Name:
                       </label>
-                      <input type="text" id="name" className="Form-field" />
+                      <input type="text" id="name" className="Form-field" onClick={this.handleClick} onFocus={this.handleFocus}/>
                     </div>
 
                     <div className="u-pb-10">
                       <label htmlFor="email" className="Form-label">
                         Email:
                       </label>
-                      <input type="email" id="email" className="Form-field" />
+                      <input type="email" id="email" className="Form-field" onClick={this.handleClick} onFocus={this.handleFocus}/>
                     </div>
 
                     <div className="u-pb-10">
                       <label htmlFor="message" className="Form-label">
                         Message:
                       </label>
-                      <textarea type="text" id="message" className="Form-field" rows="5" />
+                      <textarea type="text" id="message" className="Form-field" rows="5" onClick={this.handleClick} onFocus={this.handleFocus}/>
                     </div>
 
                     <div className="u-pb-10">
@@ -223,7 +243,7 @@ class Contacts extends React.Component {
                       </label>
                     </div>
 
-                    <button type="submit" className="Button">
+                    <button type="submit" className="Button" onClick={this.handleClick} onFocus={this.handleFocus}>
                       Send
                     </button>
                   </form>

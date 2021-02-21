@@ -18,12 +18,8 @@
   text-decoration: none;
   transition: 0.2s ease-out;
 
-  &:focus {
-    box-shadow: 0 0 3px #1089F5;
-  }
-
   &:hover {
-    background: rgba(#1089F5,0.1);
+    background: rgba(#1089F5, 0.1);
     text-decoration: none;
   }
 }

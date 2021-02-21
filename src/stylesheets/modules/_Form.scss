@@ -11,3 +11,7 @@
     padding: 0 0 5px;
   }
 }
+
+:focus:not(.isFocused) {
+  outline: none;
+}
