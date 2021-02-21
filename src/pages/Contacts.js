@@ -237,7 +237,7 @@ class Contacts extends React.Component {
                   <p className="Typography Typography--body2 u-pb-20">
                     Обычно дизайн кастомных чекбоксов и радиобатонов может быть реализован на чистом цсс.<br/>
                     Но поддержка accessibility требует js для изменения атрибута{" "}
-                    <code class="u-noWrap">aria-checked</code><br/>
+                    <code className="u-noWrap">aria-checked</code><br/>
                     Примеры:
                   </p>
 
@@ -352,7 +352,7 @@ class Contacts extends React.Component {
                   </h3>
 
                 <p className="Typography Typography--body2 u-pb-20">
-                  На <code class="u-noWrap">onChange</code>меняем <code class="u-noWrap">aria-checked</code>.<br/>
+                  На <code className="u-noWrap">onChange</code>меняем <code className="u-noWrap">aria-checked</code>.<br/>
                   С радиобатонами идея точно такая же.
                 </p>
                 </div>
